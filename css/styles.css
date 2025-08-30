@@ -69,14 +69,14 @@ p {
 /* Wrapper */
 .wrapper {
   outline: 1px solid red;
-  padding-inline: 18px;
+  width: calc(100% - 2rem);
   max-width: 1020px;
   margin-inline: auto;
 }
 
 @media screen and (min-width: 720px) {
   .wrapper {
-    padding-inline: 32px;
+    width: calc(100% - 4rem);
   }
 }
 
