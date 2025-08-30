@@ -1,0 +1,49 @@
+/* Fonts */
+/* ibm-plex-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/ibm-plex-sans-v22-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* ibm-plex-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'IBM Plex Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/ibm-plex-sans-v22-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* Variables */
+:root {
+  --color-orange: hsl(22, 88%, 66%);
+  --color-yellow: hsl(37, 99%, 72%);
+  --color-green-400: hsl(167, 47%, 56%);
+  --color-green-700: hsl(120, 33%, 59%);
+  --color-blue-400: hsl(175, 39%, 59%);
+  --color-blue-700: hsl(203, 39%, 60%);
+  --color-purple: hsl(300, 24%, 66%);
+  --color-grey: hsl(232, 88%, 97%);
+  --color-black-400: hsl(212, 29%, 10%);
+  --color-black: #000;
+}
+
+/* Base styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Typography */
+body {
+  font-family: 'IBM Plex Sans';
+}
