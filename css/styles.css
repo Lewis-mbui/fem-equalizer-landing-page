@@ -47,3 +47,21 @@ img {
 body {
   font-family: 'IBM Plex Sans';
 }
+
+h1 {
+  font-size: clamp(2.5rem, 1.0465116279069768rem + 6.2015503875969vw, 5rem);
+  margin-bottom: 25px;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: clamp(2rem, 0.7999999999999998rem + 2.666666666666667vw, 2.5rem);
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+p {
+  font-size: clamp(1rem, 0.8546511627906976rem + 0.6201550387596899vw, 1.25rem);
+  line-height: 1.5;
+}
+
