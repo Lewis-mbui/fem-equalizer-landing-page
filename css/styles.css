@@ -46,6 +46,7 @@ img {
 /* Typography */
 body {
   font-family: 'IBM Plex Sans';
+  background: var(--color-grey);
 }
 
 h1 {
@@ -63,5 +64,28 @@ h2 {
 p {
   font-size: clamp(1rem, 0.8546511627906976rem + 0.6201550387596899vw, 1.25rem);
   line-height: 1.5;
+}
+
+/* Wrapper */
+.wrapper {
+  outline: 1px solid red;
+  padding-inline: 18px;
+  max-width: 1020px;
+  margin-inline: auto;
+}
+
+@media screen and (min-width: 720px) {
+  .wrapper {
+    padding-inline: 32px;
+  }
+}
+
+/* Header section */
+.header {
+  padding-block-start: 40px;
+}
+
+.header__logo {
+  width: 9.18rem;
 }
 
