@@ -134,6 +134,29 @@ p {
 }
 
 .btn--light:hover {
-  background-color: var(--color-orange);
+  background-color: var(--color-yellow);
 }
 
+/* Showcase Block */
+.showcase-block {
+  background: var(--color-orange);
+  padding-inline: 16px;
+  padding-block-start: 2.3rem;
+  padding-block-end: 4rem;
+}
+
+.showcase-block__text {
+  width: 35ch;
+}
+
+.showcase-block__price-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  margin-block: 1.6rem;
+}
+
+.showcase-block__price-tag .price {
+  font-weight: 700;
+  font-size: 4.06rem;
+}
