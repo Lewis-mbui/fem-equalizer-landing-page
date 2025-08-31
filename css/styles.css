@@ -186,3 +186,45 @@ p {
   position: relative;
   top: -66px;
 }
+
+@media screen and (min-width: 720px) {
+  .hero {
+    height: fit-content;
+    position: relative;
+  }
+
+  .hero__title {
+    width: 15ch;
+  }
+
+  .hero__about {
+    width: 48ch;
+  }
+
+  .hero__image-wrapper {
+    width: calc(100% - 4rem);
+    margin-inline: auto;
+    border-radius: 8px;
+    padding-block-end: 6rem;
+  }
+
+  .hero__image {
+    width: 39%;
+    transform: translate(12%, -18%);
+  }
+
+  .hero__bg-pattern {
+  width: 47%;
+  margin-inline: 0;
+  }
+
+  .hero__showcase {
+    position: absolute;
+    top: 61%;
+    left: 37%;
+    max-width: 360px;
+    padding-inline: 3rem;
+    border-radius: 14px;
+    padding-block-end: 2rem;
+  }
+}
