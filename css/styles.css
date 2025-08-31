@@ -98,3 +98,42 @@ p {
   }
 }
 
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  gap: 8px;
+  text-decoration: none;
+  padding: 18px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.btn--block {
+  width: 100%;
+}
+
+.btn--dark {
+  color: #fff;
+  background-color: var(--color-black);
+  transition: background-color 0.3s;
+}
+
+.btn--dark:hover {
+  background-color: var(--color-blue-400);
+}
+
+.btn--light {
+  background-color: var(--color-grey);
+  color: var(--color-black);
+  transition: background-color 0.3s;
+}
+
+.btn--light:hover {
+  background-color: var(--color-orange);
+}
+
