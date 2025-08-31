@@ -71,31 +71,28 @@ p {
     max-width: 1020px;
     margin-inline: auto;
     outline: 1px solid red;
+    padding-inline: 16px;
   }
+
+  @media screen and (min-width: 720px) {
+    .wrapper {
+      padding-inline: 32px;
+    }
+  }
+
+  @media screen and (min-width: 1120px) {
+  .wrapper {
+    padding-inline: 0;
+  }
+}
 
 /* Header section */
 .header {
   padding-block-start: 40px;
 }
 
-.header__wrapper {
-  padding-inline: 16px;
-}
-
 .header__logo {
   width: 9.18rem;
-}
-
-@media screen and (min-width: 720px) {
-  .header__wrapper {
-    padding-inline: 32px;
-  }  
-}
-
-@media screen and (min-width: 1120px) {
-  .header__wrapper {
-    padding-inline: 0;
-  }
 }
 
 /* Buttons */
@@ -159,4 +156,33 @@ p {
 .showcase-block__price-tag .price {
   font-weight: 700;
   font-size: 4.06rem;
+}
+
+/* Hero Section */
+.hero__image-wrapper {
+  margin-top: clamp(9rem, 0.19718309859154992rem + 37.558685446009385vw, 34rem);
+  background-color: black;
+  outline: 1px solid red;
+  position: relative;
+  /* background: url(/assets/images/bg-pattern-2.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center; */
+}
+
+.hero__image {
+  width: 50%;
+  position: absolute;
+  transform: translate(50%, -28%);
+}
+
+.hero__bg-pattern {
+  width: 70%;
+  object-position: center;
+  margin-inline: auto;
+}
+
+.hero__showcase {
+  position: relative;
+  top: -66px;
 }
