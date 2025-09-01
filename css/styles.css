@@ -68,7 +68,7 @@ p {
 
 /* Wrapper */
   .wrapper {
-    max-width: 1020px;
+    max-width: 1120px;
     margin-inline: auto;
     outline: 1px solid red;
     padding-inline: 16px;
@@ -201,7 +201,7 @@ p {
 
   .hero__image-wrapper {
     width: calc(100% - 4rem);
-    max-width: 1020px;
+    max-width: 1120px;
     margin-inline: auto;
     border-radius: 8px;
     padding-block-end: 6rem;
@@ -238,8 +238,8 @@ p {
   }
 
   .hero__image {
-    width: 30%;
-    left: 6%;
+    width: 29%;
+    left: 7%;
   }
 
   .hero__bg-pattern {
@@ -249,6 +249,6 @@ p {
 
   .hero__showcase {
     max-width: 500px;
-    left: 48%;
+    left: 51%;
   }
 }
