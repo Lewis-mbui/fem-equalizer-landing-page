@@ -160,10 +160,10 @@ p {
 
 /* Hero Section */
 .hero__image-wrapper {
-  margin-top: clamp(9rem, 0.19718309859154992rem + 37.558685446009385vw, 34rem);
+  position: relative;
+  margin-top: clamp(13rem, 7.565217391304348rem + 23.18840579710145vw, 18rem);
   background-color: black;
   outline: 1px solid red;
-  position: relative;
   /* background: url(/assets/images/bg-pattern-2.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -178,7 +178,6 @@ p {
 
 .hero__bg-pattern {
   width: 70%;
-  object-position: center;
   margin-inline: auto;
 }
 
@@ -189,7 +188,6 @@ p {
 
 @media screen and (min-width: 720px) {
   .hero {
-    height: fit-content;
     position: relative;
   }
 
@@ -203,6 +201,7 @@ p {
 
   .hero__image-wrapper {
     width: calc(100% - 4rem);
+    max-width: 1020px;
     margin-inline: auto;
     border-radius: 8px;
     padding-block-end: 6rem;
@@ -214,17 +213,42 @@ p {
   }
 
   .hero__bg-pattern {
-  width: 47%;
-  margin-inline: 0;
+    width: 47%;
+    margin-inline: 0;
   }
 
   .hero__showcase {
     position: absolute;
-    top: 61%;
+    top: 59%;
     left: 37%;
     max-width: 360px;
     padding-inline: 3rem;
     border-radius: 14px;
     padding-block-end: 2rem;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .hero__title {
+    width: 20ch;
+  }
+
+  .hero__about {
+    width: 60ch;
+  }
+
+  .hero__image {
+    width: 30%;
+    left: 6%;
+  }
+
+  .hero__bg-pattern {
+    margin-inline: auto;
+    width: 30%;
+  }
+
+  .hero__showcase {
+    max-width: 500px;
+    left: 48%;
   }
 }
