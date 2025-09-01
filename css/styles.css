@@ -70,7 +70,6 @@ p {
   .wrapper {
     max-width: 1120px;
     margin-inline: auto;
-    outline: 1px solid red;
     padding-inline: 16px;
   }
 
@@ -159,15 +158,14 @@ p {
 }
 
 /* Hero Section */
+.hero {
+  padding-top: 5rem;
+}
+
 .hero__image-wrapper {
   position: relative;
   margin-top: clamp(13rem, 7.565217391304348rem + 23.18840579710145vw, 18rem);
-  background-color: black;
-  outline: 1px solid red;
-  /* background: url(/assets/images/bg-pattern-2.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center; */
+  background-color: var(--color-black);
 }
 
 .hero__image {
@@ -189,6 +187,8 @@ p {
 @media screen and (min-width: 720px) {
   .hero {
     position: relative;
+    padding-top: 10rem;
+    margin-bottom: 18rem;
   }
 
   .hero__title {
@@ -196,7 +196,7 @@ p {
   }
 
   .hero__about {
-    width: 48ch;
+    width: 45ch;
   }
 
   .hero__image-wrapper {
@@ -209,6 +209,7 @@ p {
 
   .hero__image {
     width: 39%;
+    max-width: 350px;
     transform: translate(12%, -18%);
   }
 
@@ -219,7 +220,7 @@ p {
 
   .hero__showcase {
     position: absolute;
-    top: 59%;
+    top: 66%;
     left: 37%;
     max-width: 360px;
     padding-inline: 3rem;
@@ -259,6 +260,7 @@ p {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 1.4rem;
+  padding-bottom: 4rem;
 }
 
 .footer__logo {
