@@ -189,10 +189,6 @@ p {
     position: relative;
     padding-top: 6rem;
     margin-bottom: 18rem;
-    background: url(/assets/images/bg-pattern-1.svg);
-    background-repeat: no-repeat;
-    background-position-x: 110%;
-    background-position-y: -13%;
   }
 
   .hero__title {
@@ -234,11 +230,6 @@ p {
 }
 
 @media screen and (min-width: 1120px) {
-  .hero {
-    background-position-x: 101%;
-    background-position-y: -4%;
-  }
-
   .hero__title {
     width: 20ch;
   }
@@ -351,5 +342,22 @@ p {
 @media screen and (min-width: 1120px) {
   .bg {
     background-image: url(/assets/images/bg-main-desktop.png);
+  }
+}
+
+
+@media screen and (min-width: 720px) {
+  .bg-pattern {
+    background: url(/assets/images/bg-pattern-1.svg);
+    background-repeat: no-repeat;
+    background-position-x: 113%;
+    background-position-y: -3%;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .bg-pattern {
+    background-position-x: 96%;
+    background-position-y: -3%;
   }
 }
